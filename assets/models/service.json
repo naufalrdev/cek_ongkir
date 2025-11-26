@@ -1,0 +1,73 @@
+{
+    "meta": {
+        "message": "Success Calculate Domestic Shipping cost",
+        "code": 200,
+        "status": "success"
+    },
+    "data": [
+        {
+            "name": "J&T Express",
+            "code": "jnt",
+            "service": "EZ",
+            "description": "Reguler",
+            "cost": 9000,
+            "etd": ""
+        },
+        {
+            "name": "SiCepat Express",
+            "code": "sicepat",
+            "service": "REG",
+            "description": "Reguler",
+            "cost": 9600,
+            "etd": "1-2 day"
+        },
+        {
+            "name": "Jalur Nugraha Ekakurir (JNE)",
+            "code": "jne",
+            "service": "REG",
+            "description": "Layanan Reguler",
+            "cost": 11000,
+            "etd": "1 day"
+        },
+        {
+            "name": "Jalur Nugraha Ekakurir (JNE)",
+            "code": "jne",
+            "service": "JTR",
+            "description": "JNE Trucking",
+            "cost": 50000,
+            "etd": "3 day"
+        },
+        {
+            "name": "SiCepat Express",
+            "code": "sicepat",
+            "service": "GOKIL",
+            "description": "Cargo Per Kg (Minimal 10kg)",
+            "cost": 50000,
+            "etd": "2-3 day"
+        },
+        {
+            "name": "Jalur Nugraha Ekakurir (JNE)",
+            "code": "jne",
+            "service": "JTR<130",
+            "description": "JNE Trucking",
+            "cost": 500000,
+            "etd": "3 day"
+        },
+        {
+            "name": "Jalur Nugraha Ekakurir (JNE)",
+            "code": "jne",
+            "service": "JTR>130",
+            "description": "JNE Trucking",
+            "cost": 800000,
+            "etd": "3 day"
+        },
+        {
+            "name": "Jalur Nugraha Ekakurir (JNE)",
+            "code": "jne",
+            "service": "JTR>200",
+            "description": "JNE Trucking",
+            "cost": 1000000,
+            "etd": "3 day"
+        }
+    ]
+}
