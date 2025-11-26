@@ -250,17 +250,34 @@ class HomeView extends GetView<HomeController> {
             ),
           ),
           SizedBox(height: 10),
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () => controller.cekOngkir(),
+          Obx(
+            () => ElevatedButton(
+              onPressed: controller.isLoading.value
+                  ? null
+                  : () => controller.cekOngkir(),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orangeAccent,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
-              child: Text("Cek Ongkir", style: TextStyle(color: Colors.white)),
+              child: controller.isLoading.value
+                  ? Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          width: 18,
+                          height: 18,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        Text("Mengecek Ongkir..."),
+                      ],
+                    )
+                  : Text("Cek Ongkir", style: TextStyle(color: Colors.white)),
             ),
           ),
         ],
